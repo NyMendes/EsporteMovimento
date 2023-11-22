@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <title>Login</title>
+  </head>
+  <body class="notranslate" id="codigo" style="overflow-y: auto">
+    <div id="login">
+      <div class="sc-um tela">
+        <div class="sc-dois cerca">
+          <div class="sc-tres terra">
+            <div class="sc-quatro terreno">
+              <form
+                action="index.html"
+                class="sc-right esquerdo cadastro"
+                data-testid="form"
+                method="post"
+                autocomplete="on"
+              >
+                <div class="formbtn">
+                  <button id="btnSignin" class="btnLogin">
+                    <a href="login.html">Login</a>
+                  </button>
+                  <button
+                    id="btnSignup"
+                    class="btnCadastro"
+                    href="cadastro.html"
+                  >
+                    <a href="cadastro.html">Cadastro</a>
+                  </button>
+                </div>
+                <section class="sc-section area">
+                  <label for="name">
+                    Digite seu nome completo
+                    <input
+                      id="name"
+                      type="text"
+                      required=""
+                      name="name"
+                      placeholder=""
+                    />
+                  </label>
+
+                  <label for="idade">
+                    Digite sua idade
+                    <input
+                      id="idade"
+                      type="tel"
+                      required=""
+                      mask="99/99/9999"
+                      maxlength="10"
+                      autocorrect="off"
+                      name="birthDate"
+                      placeholder="__/__/____"
+                      value=""
+                    />
+                  </label>
+                  <label for="fone">
+                    Digite seu telefone
+                    <input
+                      id="fone"
+                      type="tel"
+                      required=""
+                      maxlength="14"
+                      mask="(99) 99999-9999"
+                      autocorrect="off"
+                      name="phone"
+                      placeholder="(__) _____-____"
+                    />
+                  </label>
+
+                  <label for="password">
+                    Digite uma senha
+                    <input
+                      id="password"
+                      description="precisa ter entre 6 e 20 caracteres"
+                      type="password"
+                      minlength="6"
+                      maxlength="20"
+                      cursor="pointer"
+                      name="password"
+                      required=""
+                      label="[object Object]"
+                    />
+                  </label>
+                  <button
+                    class="sc-button entrar btnCadastro"
+                    type="submit"
+                    font-size="16"
+                  >
+                    <!--disabled=""-->
+                    Cadastrar
+                  </button>
+                </section>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
